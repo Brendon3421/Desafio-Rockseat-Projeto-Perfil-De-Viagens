@@ -1,4 +1,5 @@
 :root {
+
     --font: "Poppins", sans-serif;
     --color-hover: #EF5F4C;
     --text-color-primary: #313131;
@@ -101,9 +102,24 @@ nav {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     width: 280px;
     height: 104px;
+}
+
+.info span {
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-md);
+    margin: 8px;
+    font-family: var(--font);
+    color: var(--text-color-secondary);
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 16px;
 }
 
 .location {
@@ -112,6 +128,7 @@ nav {
     justify-content: flex-start;
     margin-bottom: 16px;
 }
+
 
 .countries {
     display: flex;
@@ -130,15 +147,7 @@ nav {
 
 }
 
-.info span {
-    display: inline;
-    align-items: center;
-    font-size: var(--font-size-md);
-    justify-content: center;
-    margin: 8px;
-    font-family: var(--font);
-    color: var(--text-color-secondary);
-}
+
 
 .photo-gallery {
     position: relative;
