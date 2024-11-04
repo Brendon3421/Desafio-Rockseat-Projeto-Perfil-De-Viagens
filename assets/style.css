@@ -4,161 +4,149 @@
     --color-hover: #EF5F4C;
     --text-color-primary: #313131;
     --text-color-secondary: #6C6C6C;
+    --bg-surface-color: #F5F5F5;
     --font-size-md: 14px;
+    --font-size-16: 16px;
+    --margin-16: 16px;
     --font-size-h1: 32px;
+    --margin-32: 32px
 }
 
-header {
-    position: relative;
-    width: 1280px;
-    height: 40px;
-    margin: auto;
-    margin-bottom: 32px;
+/* .container {
+        position: relative;
+        margin: auto;
+        width: 1280px;
+        height: 100vh;
+    } */
+
+.bg-surface {
+    background-color: var(--bg-surface-color);
 }
 
-.nav.items {
+header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    top: 0;
+    margin: 0;
+    padding: var(--margin-32);
 }
 
-.logo {
+header ul {
+    list-style: none;
     display: flex;
     align-items: center;
+    gap: 24px;
 }
 
-.menu.items {
-    display: flex;
-    font-family: var(--font);
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    color: var(--text-color-secondary);
-}
-
-.nav.items {
-    display: flex;
-}
-
-.nav.items a {
-    color: var(--text-color-secondary);
-    cursor: pointer;
+header a {
     text-decoration: none;
+    color: var(--text-color-secondary);
 }
 
-.nav.items a:hover {
+a:hover {
     color: var(--color-hover);
-    cursor: pointer;
-    text-decoration: none;
 }
 
-nav {
-    position: relative;
-    width: 1280px;
-    height: 240px;
-    margin: auto;
-
-}
-
-.perfil {
-    position: relative;
+header nav ul li {
     display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-
-.nome-perfil {
-    display: flex;
-    flex-direction: column;
-    margin-left: 32px;
-    margin-right: auto;
-    width: 384px;
-    height: 168px;
     font-family: var(--font);
-    font-size: var(--font-size-md);
-}
-
-.nome-perfil h1 {
-    font-size: var(--font-size-h1);
-    margin-bottom: -8px;
-    font-family: var(--font);
-    color: var(--text-color-primary);
-}
-
-.nome-perfil p {
-    display: flex;
-    text-align: left;
-    text-decoration: none;
-    width: 314px;
-    height: 168px;
-    font-family: var(--font);
+    font-size: var(--font-size-16);
     color: var(--text-color-secondary);
+}
+
+nav ul li:last-child img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+section nav ul li {
+    list-style: none;
 
 }
 
 
-.info {
+
+section .main {
     position: relative;
     display: flex;
-    flex-direction: column;
+}
+
+section nav h1 {
+    font-size: var(--font-size-h1);
+    font-family: var(--font);
+    margin-bottom: 0;
+}
+
+section p {
+    color: var(--text-color-secondary);
+    font-family: var(--font);
+    line-height: 170%;
+    margin-top: 8px;
+}
+
+section .profile-pic {
+    width: 592px;
+    height: 176px;
+    display: flex;
+    margin: var(--margin-32);
+    align-items: center;
+    margin-right: auto;
+}
+
+section .info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 34px 34px 34px 62px;
+}
+
+section nav .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 280px;
     height: 104px;
+
 }
 
-.info span {
-    align-items: center;
-    justify-content: center;
-    font-size: var(--font-size-md);
-    margin: 8px;
-    font-family: var(--font);
+section nav .info span {
+    display: flex;
     color: var(--text-color-secondary);
+    font-family: var(--font);
+    margin-left: 8px;
+    margin-bottom: var(--margin-16);
+
 }
 
-.photo {
+section nav .info ul li img {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 16px;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
 }
 
-.location {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 16px;
-}
-
-
-.countries {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 16px;
-
-}
 
 .photo-gallery {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-
 }
 
 
 
 .photo-gallery {
-    position: relative;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 1380px;
-    height: 1020px;
 }
 
 .card.photo {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -169,6 +157,7 @@ nav {
 .card.photo img {
     position: relative;
     cursor: pointer;
+    display: flex;
     width: 286px;
     height: 286px;
     margin: 24px;
@@ -177,11 +166,10 @@ nav {
 footer .travelgram {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
+    margin: 32px;
     justify-content: space-between;
-    width: 1280px;
-    height: 42px;
-    margin: auto;
     color: var(--text-color-secondary);
     font-size: var(--font-size-md);
 }
